@@ -1,0 +1,62 @@
+.container{
+    border: 5px solid black;
+    padding: 1rem;
+    margin: 1rem 2rem;
+    margin-bottom: 5rem;
+}
+.age-h1{
+    border: 1px solid black;
+    text-align: center;
+}
+
+.age-button-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.age-result-container{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    padding: 1rem;
+}
+.age-result{
+    border: 1px solid green;
+    height: 1rem;
+    min-width: 2rem;
+
+}
+
+/* Cat Generator */
+
+.cat-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.cat-container img{
+    margin: 1rem;
+    width: 30%;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+
+/* RPS */
+
+.RPS-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    
+}
+
+.RPS-container h1{
+    margin-top:50% ;
+}
+
+.RPS-container img:hover{
+    box-shadow: 0px 15px 50px rgba(68, 0, 255, 0.918);
+};
