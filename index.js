@@ -145,7 +145,7 @@ var all_buttons = document.getElementsByTagName('button');
 var copyAllButtons=[]
 
 for(let i=0; i<all_buttons.length; i++ ){
-    copyAllButtons.push(all_buttons[i])
+    copyAllButtons.push(all_buttons[i].classList[1])
 }
 
 
@@ -176,7 +176,7 @@ function redColorBtn(){
 function yellowColorBtn(){
     for(let i=0 ; i<all_buttons.length; i++){
         all_buttons[i].classList.remove(all_buttons[i].classList[1])
-        all_buttons[i].classList.add("btn-warning")
+        all_buttons[i].classList.add('btn-warning')
     }
 }
 
@@ -191,10 +191,17 @@ function randomColorBtn(){
     for(let i=0; i<all_buttons.length;i++){
         all_buttons[i].classList.remove(all_buttons[i].classList[1])
         let randomNum = Math.floor(Math.random()*3);
-        console.log(randomNum)
+        
       
         let choice=['btn-primary','btn-danger','btn-success','btn-warning'][randomNum] ;
         
         all_buttons[i].classList.add(choice);
+    }
+}
+
+function resetBtn(){
+    for (let i =0; i<all_buttons.length; i++){
+        all_buttons[i].classList.remove(all_buttons[i].classList[1])
+        all_buttons[i].classList.add(copyAllButtons[i])
     }
 }
