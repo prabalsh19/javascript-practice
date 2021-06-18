@@ -46,7 +46,7 @@
 
 /* RPS */
 
-.RPS-container{
+.RPS-container ,.btn-color-change-container{
     display: flex;
     justify-content: space-around;
     margin: 2rem;
@@ -60,3 +60,7 @@
 .RPS-container img:hover{
     box-shadow: 0px 15px 50px rgba(68, 0, 255, 0.918);
 };
+
+
+/* Change Color OF All Button */
+

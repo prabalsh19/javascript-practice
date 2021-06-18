@@ -136,3 +136,65 @@ function rpsFrontEnd(yourChoice, botChoice, message) {
 
 
 }
+
+
+// Change All Btn Color
+
+var all_buttons = document.getElementsByTagName('button');
+
+var copyAllButtons=[]
+
+for(let i=0; i<all_buttons.length; i++ ){
+    copyAllButtons.push(all_buttons[i])
+}
+
+
+
+
+function changeBtnColor(selected){
+    if(selected.value=== 'red'){
+        redColorBtn()
+    } else if(selected.value==='yellow'){
+        yellowColorBtn()
+    } else if(selected.value==='green'){
+        greenColorBtn()
+    } else if (selected.value==='random'){
+        randomColorBtn()
+    } else if(selected.value==='reset'){
+        resetBtn()
+    }
+
+}
+
+function redColorBtn(){
+    for(let i=0 ; i< all_buttons.length; i++){
+        all_buttons[i].classList.remove(all_buttons[i].classList[1])
+        all_buttons[i].classList.add("btn-danger")
+    }
+}
+
+function yellowColorBtn(){
+    for(let i=0 ; i<all_buttons.length; i++){
+        all_buttons[i].classList.remove(all_buttons[i].classList[1])
+        all_buttons[i].classList.add("btn-warning")
+    }
+}
+
+function greenColorBtn(){
+    for(let i=0 ; i<all_buttons.length; i++){
+        all_buttons[i].classList.remove(all_buttons[i].classList[1])
+        all_buttons[i].classList.add("btn-success")
+    }
+}
+
+function randomColorBtn(){
+    for(let i=0; i<all_buttons.length;i++){
+        all_buttons[i].classList.remove(all_buttons[i].classList[1])
+        let randomNum = Math.floor(Math.random()*3);
+        console.log(randomNum)
+      
+        let choice=['btn-primary','btn-danger','btn-success','btn-warning'][randomNum] ;
+        
+        all_buttons[i].classList.add(choice);
+    }
+}
