@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Practice</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="age-h1">
             <h1>Get Your Age In Days</h1>
         </div>
@@ -88,26 +88,31 @@
             <button class="btn btn-warning">Youtube!</button>
         </div>
 
-    </div>
+    </div> -->
 
-    <div id="blackjack-container">
-        <h2 id="blackjack-heading">Black Jack</h2>
+
+
+<div class="container">
+    <div class="blackjack-container">
+        <h2 class="blackjack-heading">Black Jack</h2>
         <h3><span id="blackjack-result">Let's Play</span></h3>
-
+    </div>
         <div class="flex-blackjack-row-1">
             <div id="your-box">
-                <h2>You: <span>0</span></h2>
+                <h2>You: <span id="your-score">0</span></h2>
+               
             </div>
             <div id="bot-box">
-                <h2>Dealer: <span>0</span></h2>
+                <h2>Dealer: <span id="bot-score">0</span></h2>
+             <div id="bot-card-div"></div>
             </div>
         </div>
         <div class="flex-blackjack-row-2">
-            <div>
+            <div class="backjack-btn-div">
 
-                <button class="btn-lg btn-primary">Hit</button>
-                <button class="btn-lg btn-warning">Stand</button>
-                <button class="btn-lg btn-danger">Deal</button>
+                <button id="hitBtn" class="btn-lg btn-primary ">Hit</button>
+                <button id="standBtn" class="btn-lg btn-warning ">Stand</button>
+                <button id="dealBtn" class="btn-lg btn-danger">Deal</button>
 
             </div>
         </div>
@@ -127,9 +132,11 @@
         </div>
 
 
-    </div>
+    
+</div>
+    
 
-    <script src="index.js"></script>
+    <script src="js\index.js"></script>
 </body>
 
 </html>
